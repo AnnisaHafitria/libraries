@@ -1,0 +1,114 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "libraries",
+    "dateExported": "2023-02-08T18:08:05.630Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "c5f2ef59-9919-4b04-81ae-fe765e330cb9",
+            "name": "Books",
+            "containerId": "",
+            "created": "2023-02-08T15:54:34.977Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "a20bb2f3-a408-48de-bf16-a12d55319bc2",
+            "colId": "1d01dda3-4362-4f0a-8200-5fe8edd6010b",
+            "containerId": "c5f2ef59-9919-4b04-81ae-fe765e330cb9",
+            "name": "fetch",
+            "url": "localhost/libraries/server/api/books/fetch.php",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2023-02-08T15:55:13.596Z",
+            "modified": "2023-02-08T15:56:36.722Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cffb51e5-43c8-4da3-a0c7-ed47998bfd03",
+            "colId": "1d01dda3-4362-4f0a-8200-5fe8edd6010b",
+            "containerId": "c5f2ef59-9919-4b04-81ae-fe765e330cb9",
+            "name": "get",
+            "url": "localhost/libraries/server/api/books/get.php?id=1",
+            "method": "GET",
+            "sortNum": 7500,
+            "created": "2023-02-08T15:55:19.138Z",
+            "modified": "2023-02-08T16:25:46.117Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "73951ea3-4f23-4d90-bad6-e1dc5cc1c0b0",
+            "colId": "1d01dda3-4362-4f0a-8200-5fe8edd6010b",
+            "containerId": "c5f2ef59-9919-4b04-81ae-fe765e330cb9",
+            "name": "delete",
+            "url": "localhost/libraries/server/api/books/delete.php?id=5",
+            "method": "DELETE",
+            "sortNum": 8750,
+            "created": "2023-02-08T15:55:06.928Z",
+            "modified": "2023-02-08T16:30:47.281Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "5",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\" : 7\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a4be37d9-fec9-42a3-9378-510369326102",
+            "colId": "1d01dda3-4362-4f0a-8200-5fe8edd6010b",
+            "containerId": "c5f2ef59-9919-4b04-81ae-fe765e330cb9",
+            "name": "add",
+            "url": "localhost/libraries/server/api/books/add.php",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-02-08T15:54:45.887Z",
+            "modified": "2023-02-08T17:47:13.877Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"8\",\n  \"name\":\"Coba?\",\n  \"writer\":\"Sani Fitra\",\n  \"publisher\":\"Bukunesia\",\n  \"stock\":\"100\",\n  \"note\":\"Kisah Beda Keyakinan\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2f34f947-05d8-45a7-8459-53f327c0f222",
+            "colId": "1d01dda3-4362-4f0a-8200-5fe8edd6010b",
+            "containerId": "c5f2ef59-9919-4b04-81ae-fe765e330cb9",
+            "name": "update",
+            "url": "localhost/libraries/server/api/books/update.php",
+            "method": "PUT",
+            "sortNum": 27500,
+            "created": "2023-02-08T15:55:27.758Z",
+            "modified": "2023-02-08T16:29:59.778Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"6\",\n  \"name\":\"Apa Kita Beneran Ga Bisa Sama Sekali?\",\n  \"writer\":\"Nis Aftr\",\n  \"publisher\":\"Bokesia\",\n  \"stock\":\"200\",\n  \"note\":\"Perbedaan\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
